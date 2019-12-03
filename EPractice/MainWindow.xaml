@@ -1,0 +1,17 @@
+﻿<Controls:MetroWindow x:Class="EPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        BorderBrush="{DynamicResource AccentColorBrush}"
+        BorderThickness="1"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        Title="E-Practice" Height="700" Width="900">
+    <Page Loaded="Page_Loaded">
+        <Frame NavigationUIVisibility="Hidden" Loaded="Page_Loaded" Grid.Row="1" Source="FrontPage.xaml">
+
+        </Frame>
+
+    </Page>
+        
+    
+</Controls:MetroWindow>

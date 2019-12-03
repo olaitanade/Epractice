@@ -1,0 +1,45 @@
+﻿<Page x:Class="EPractice.Test"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="300"
+	Title="Test">
+
+    <DockPanel Margin="10">
+        <Menu DockPanel.Dock="Top" Margin="5" Foreground="Crimson">
+            <MenuItem Header="_Quit Test" Click="quit_eventhandler">
+
+            </MenuItem>
+        </Menu>
+        <TextBlock DockPanel.Dock="Top" Margin="10" FontSize="25" Foreground="{DynamicResource AccentColorBrush}" HorizontalAlignment="Center">Physics Test Started</TextBlock>
+        <DataGrid Name="questionsGrid" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling" MinWidth="100" DockPanel.Dock="Left">
+            
+        </DataGrid>
+        <StackPanel>
+            <TextBlock Name="timertxt" Margin="10" Foreground="Crimson" FontSize="15" HorizontalAlignment="Right">Time: 0:00</TextBlock>
+            <GroupBox Header="Question"  Padding="5" MaxWidth="1000"
+ Margin="10" VerticalAlignment="Top">
+
+                <StackPanel>
+                    <TextBlock Margin="5" TextWrapping="Wrap" FontSize="14">	
+Radiocarbon is produced in the atmosphere as a result of?</TextBlock>
+                    <RadioButton Margin="3" FontSize="14">A) collision between fast neutrons and nitrogen nuclei present in the atmosphere</RadioButton>
+                    <RadioButton Margin="3" FontSize="14">B) action of ultraviolet light from the sun on atmospheric oxygen</RadioButton>
+                    <RadioButton Margin="3" FontSize="14">C) action of solar radiations particularly cosmic rays on carbon dioxide present in the atmosphere</RadioButton>
+                    <RadioButton Margin="3" FontSize="14">D) lightning discharge in atmosphere</RadioButton>
+                    <DockPanel  Margin="15">
+                        <Button HorizontalAlignment="Left" Width="100" Margin="5">Previous</Button>
+                        <Button HorizontalAlignment="Right" Margin="5" Width="100">Next</Button>
+                    </DockPanel>
+                    
+                </StackPanel>
+            </GroupBox>
+            <Button Margin="7" MaxWidth="350">Submit Test</Button>
+        </StackPanel>
+
+
+    </DockPanel>
+</Page>
